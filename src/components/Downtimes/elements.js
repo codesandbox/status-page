@@ -53,21 +53,15 @@ const colorChange = ({ down, theme }) => keyframes`
 
 export const Status = styled.div`
   transition: all 0.3s ease;
+  background: ${props => props.loading && props.theme.fadedWhite};
   ${({ loading }) =>
     !loading &&
     css`
-      animation: ${colorChange} 1s;
+      animation: ${colorChange} 1s forwards;
     `}
-  background: ${props => {
-    if (props.loading) {
-      return props.theme.fadedWhite
-    }
 
-    return props.down ? props.theme.yellow : props.theme.green
-  }};
   width: 0.5rem;
   height: 2.5rem;
-
 
   &:hover {
     transform: scaleY(1.2);

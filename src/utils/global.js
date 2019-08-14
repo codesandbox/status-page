@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
-import global from '@codesandbox/common/lib/global.css';
-import font from '../assets/inter/inter.css';
+import global from '@codesandbox/common/lib/global.css'
+import font from '../assets/inter/inter.css'
 
 export const GlobalStyle = createGlobalStyle`
   ${font}
@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html,body, #root {
     height: 100%;
+    background: #111518;
     a {
       color: ${props => props.theme.white};
       text-decoration: none;
@@ -20,4 +21,4 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
    font-family: 'Inter' !important;
   }
-`;
+`

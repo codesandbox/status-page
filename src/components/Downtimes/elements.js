@@ -1,5 +1,5 @@
-import styled, { keyframes, css } from 'styled-components';
-import { Tooltip } from '../Tooltip/elements';
+import styled, { keyframes, css } from 'styled-components'
+import { Tooltip } from '../Tooltip/elements'
 
 export const Alias = styled.h3`
   margin: 0;
@@ -7,7 +7,7 @@ export const Alias = styled.h3`
   font-style: normal;
   font-weight: normal;
   color: ${props => props.theme.white};
-`;
+`
 
 export const Data = styled.span`
   font-family: Poppins;
@@ -15,8 +15,8 @@ export const Data = styled.span`
   font-weight: normal;
   text-align: right;
 
-  color: rgba(255, 255, 255, 0.4);
-`;
+  color: ${props => props.theme.fadedWhite};
+`
 
 export const Header = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ export const Header = styled.div`
   margin-bottom: 0.5rem;
   justify-content: space-between;
   width: 100%;
-`;
+`
 
 export const Services = styled.ul`
   margin: 0;
@@ -35,47 +35,48 @@ export const Services = styled.ul`
   grid-row-gap: 60px;
   padding-top: 60px;
   margin-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-`;
+  border-top: 1px solid ${props => props.theme.transparentWhite};
+`
 
 export const Service = styled.li`
   display: flex;
   flex-direction: column;
-`;
+`
 
-const colorChange = keyframes`
+const colorChange = ({ down, theme }) => keyframes`
   from {
-    background: rgba(255,255,255,0.4)
+    background: ${theme.fadedWhite};
   } to {
-      background: ${props => (props.down ? '#F59300' : '#30d158')};
+    background: ${down ? theme.yellow : theme.green};
   }
-`;
+`
 
 export const Status = styled.div`
   transition: all 0.3s ease;
-  ${props =>
-    !props.loading &&
+  ${({ loading }) =>
+    !loading &&
     css`
       animation: ${colorChange} 1s;
     `}
   background: ${props => {
     if (props.loading) {
-      return 'rgba(255,255,255,0.4)';
+      return props.theme.fadedWhite
     }
 
-    return props.down ? '#F59300' : '#30d158';
+    return props.down ? props.theme.yellow : props.theme.green
   }};
   width: 0.5rem;
-  height: 40px;
+  height: 2.5rem;
+
 
   &:hover {
     transform: scaleY(1.2);
 
     + ${Tooltip} {
-opacity: 1;
+      opacity: 1;
     }
   }
-`;
+`
 
 export const AllStatus = styled.div`
   display: grid;
@@ -83,4 +84,4 @@ export const AllStatus = styled.div`
   justify-content: space-between;
   cursor: pointer;
   position: relative;
-`;
+`

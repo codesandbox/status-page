@@ -1,36 +1,14 @@
-import React from 'react';
-import { isDown, upPercent, lastCheck } from './fn';
-import {
-  Title,
-  LastCheck,
-  Circle,
-  HeaderStyled,
-  Percent,
-  Visual,
-} from './elements';
+import React from 'react'
+import { ReactComponent as Logo } from '../../assets/logo.svg'
+import { HeaderStyled, Title } from './elements'
 
-const Header = ({ loading, up }) => {
+const Header = () => {
   return (
     <HeaderStyled>
-      <div>
-        <Title>
-          {loading
-            ? 'Getting the data'
-            : !isDown(up)
-            ? 'All Services Operational'
-            : 'We are experiences some issues'}
-        </Title>
-        <LastCheck>
-          {loading ? 'Hold on Tight' : `As of ${lastCheck(up)}`}
-        </LastCheck>
-      </div>
-
-      <Visual>
-        {!loading && <Percent>{upPercent(up)}</Percent>}
-        {loading ? <Circle loading /> : <Circle down={isDown(up)} />}
-      </Visual>
+      <Logo />
+      <Title>System Status</Title>
     </HeaderStyled>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

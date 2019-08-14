@@ -36,6 +36,10 @@ export const Services = styled.ul`
   padding-top: 60px;
   margin-top: 20px;
   border-top: 1px solid ${props => props.theme.transparentWhite};
+
+  @media (max-width: 920px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 export const Service = styled.li`
@@ -60,7 +64,7 @@ export const Status = styled.div`
       animation: ${colorChange} 1s forwards;
     `}
 
-  width: 0.5rem;
+  width: 100%;
   height: 2.5rem;
 
   &:hover {
@@ -78,4 +82,12 @@ export const AllStatus = styled.div`
   justify-content: space-between;
   cursor: pointer;
   position: relative;
+
+  @media (max-width: 920px) {
+    grid-template-columns: repeat(30, 1rem);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(30, 0.5rem);
+  }
 `

@@ -12,6 +12,7 @@ const Main = styled.main`
     0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem;
   width: 890px;
+  max-width: 100%;
   min-height: 660px;
   padding: 2.5rem;
   box-sizing: border-box;
@@ -27,7 +28,7 @@ const Wrapper = styled.div`
 `
 
 const Footer = styled.span`
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   text-align: center;
   font-size: 1rem;
 

@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "REACT_APP_UPDOWN_API_KEY": "@updown_api_key"
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import styled, { keyframes, css } from 'styled-components'
-import { Tooltip } from '../Tooltip/elements'
+import styled, { keyframes, css } from 'styled-components';
+import { Tooltip } from '../Tooltip/elements';
 
 export const Alias = styled.h3`
   margin: 0;
@@ -7,7 +7,7 @@ export const Alias = styled.h3`
   font-style: normal;
   font-weight: normal;
   color: ${props => props.theme.white};
-`
+`;
 
 export const Data = styled.span`
   font-family: Poppins;
@@ -16,7 +16,7 @@ export const Data = styled.span`
   text-align: right;
 
   color: ${props => props.theme.fadedWhite};
-`
+`;
 
 export const Header = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ export const Header = styled.div`
   margin-bottom: 0.5rem;
   justify-content: space-between;
   width: 100%;
-`
+`;
 
 export const Services = styled.ul`
   margin: 0;
@@ -40,12 +40,12 @@ export const Services = styled.ul`
   @media (max-width: 920px) {
     grid-template-columns: repeat(1, 1fr);
   }
-`
+`;
 
 export const Service = styled.li`
   display: flex;
   flex-direction: column;
-`
+`;
 
 const colorChange = ({ down, theme }) => keyframes`
   from {
@@ -53,7 +53,7 @@ const colorChange = ({ down, theme }) => keyframes`
   } to {
     background: ${down ? theme.yellow : theme.green};
   }
-`
+`;
 
 export const Status = styled.div`
   transition: all 0.3s ease;
@@ -74,7 +74,7 @@ export const Status = styled.div`
       opacity: 1;
     }
   }
-`
+`;
 
 export const AllStatus = styled.div`
   display: grid;
@@ -90,4 +90,4 @@ export const AllStatus = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: repeat(30, 0.5rem);
   }
-`
+`;

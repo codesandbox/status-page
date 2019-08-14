@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Title = styled.h1`
   font-style: normal;
@@ -6,13 +6,13 @@ export const Title = styled.h1`
   font-size: 1.5rem;
   color: ${props => props.theme.white};
   margin: 0;
-`
+`;
 
 export const LastCheck = styled.span`
   line-height: 1.5rem;
 
   color: ${({ theme }) => theme.darkWhite};
-`
+`;
 
 export const Circle = styled.div`
   width: 1.5rem;
@@ -22,18 +22,18 @@ export const Circle = styled.div`
 
   background: ${props => {
     if (props.loading) {
-      return props.theme.fadedWhite
+      return props.theme.fadedWhite;
     }
 
-    return props.down ? props.theme.yellow : props.theme.green
+    return props.down ? props.theme.yellow : props.theme.green;
   }};
-`
+`;
 
 export const HeaderStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
 export const Percent = styled.h2`
   margin: 0;
@@ -43,9 +43,9 @@ export const Percent = styled.h2`
   text-align: right;
   color: ${props => props.theme.white};
   margin-right: 0.5rem;
-`
+`;
 
 export const Visual = styled.div`
   display: flex;
   align-items: center;
-`
+`;

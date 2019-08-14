@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import { ThemeProvider } from 'styled-components'
-import { GlobalStyle, theme } from './utils/global'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, theme } from './utils/global';
 
 const Main = () => (
   <ThemeProvider theme={theme}>
@@ -11,6 +11,6 @@ const Main = () => (
       <App />
     </>
   </ThemeProvider>
-)
+);
 
-ReactDOM.render(<Main />, document.getElementById('root'))
+ReactDOM.render(<Main />, document.getElementById('root'));

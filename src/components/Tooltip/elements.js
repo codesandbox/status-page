@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Circle = styled.div`
   width: 0.75rem;
@@ -9,7 +9,7 @@ export const Circle = styled.div`
   top: 2px;
   background: ${props => props.theme.green};
   margin-right: 0.25rem;
-`
+`;
 
 export const Tooltip = styled.div`
   transition: all 200ms ease;
@@ -41,7 +41,7 @@ export const Tooltip = styled.div`
     border-width: 0.5rem;
     margin-left: -0.5rem;
   }
-`
+`;
 
 export const Info = styled.span`
   font-size: 0.75rem;
@@ -52,4 +52,4 @@ export const Info = styled.span`
   &:last-of-type {
     margin-top: 0.25rem;
   }
-`
+`;

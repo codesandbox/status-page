@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
-import global from '@codesandbox/common/lib/global.css'
-import font from '../assets/inter/inter.css'
+import global from '@codesandbox/common/lib/global.css';
+import font from '../assets/inter/inter.css';
 
 export const GlobalStyle = createGlobalStyle`
   ${font}
@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
    font-family: 'Inter' !important;
   }
-`
+`;
 
 export const theme = {
   white: '#fff',
@@ -30,5 +30,5 @@ export const theme = {
   green: '#30d158',
   transparentWhite: 'rgba(255, 255, 255, 0.2)',
   darkWhite: 'rgba(255, 255, 255, 0.6)',
-  black: '#000'
-}
+  black: '#000',
+};

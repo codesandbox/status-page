@@ -1,10 +1,10 @@
-import React from 'react'
-import { useDowntime } from './hooks/useDowntime'
-import MainStatus from './components/MainStatus'
+import React from 'react';
+import { useDowntime } from './hooks/useDowntime';
+import MainStatus from './components/MainStatus';
 
-import Header from './components/Header'
-import Downtimes from './components/Downtimes'
-import styled from 'styled-components'
+import Header from './components/Header';
+import Downtimes from './components/Downtimes';
+import styled from 'styled-components';
 
 const Main = styled.main`
   background: #1d2022;
@@ -16,7 +16,7 @@ const Main = styled.main`
   min-height: 660px;
   padding: 2.5rem;
   box-sizing: border-box;
-`
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   flex-direction: column;
-`
+`;
 
 const Footer = styled.span`
   margin: 1.5rem 0;
@@ -33,10 +33,10 @@ const Footer = styled.span`
   font-size: 1rem;
 
   color: rgba(255, 255, 255, 0.6);
-`
+`;
 
 const App = () => {
-  const [downtimes, up, loading] = useDowntime()
+  const [downtimes, up, loading] = useDowntime();
 
   return (
     <Wrapper>
@@ -51,7 +51,7 @@ const App = () => {
         feed—follow us there!
       </Footer>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default App
+export default App;

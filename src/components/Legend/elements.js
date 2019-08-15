@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Legend = styled.div`
   display: flex;
@@ -9,13 +9,13 @@ export const Legend = styled.div`
   li:not(:last-child) {
     margin-right: 2rem;
   }
-`
+`;
 
 export const LegendLi = styled.li`
   list-style: none;
   display: flex;
   align-items: center;
-`
+`;
 
 export const Dot = styled.div`
   width: 1rem;
@@ -23,4 +23,4 @@ export const Dot = styled.div`
   background: ${({ theme, down }) => (down ? theme.yellow : theme.green)};
   border-radius: 50%;
   margin-right: 0.5rem;
-`
+`;

@@ -1,6 +1,6 @@
-import React from 'react'
-import { ReactComponent as Logo } from '../../assets/logo.svg'
-import { HeaderStyled, Title } from './elements'
+import React from 'react';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { HeaderStyled, Title } from './elements';
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       <Logo />
       <Title>System Status</Title>
     </HeaderStyled>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

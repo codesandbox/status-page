@@ -12,7 +12,7 @@ Thanks goes to these people ([emoji key][emojis]):
 <table>
   <tr>
     <td align="center"><a href="http://iamsaravieira.com"><img src="https://avatars0.githubusercontent.com/u/1051509?v=4" width="100px;" alt="Sara Vieira"/><br /><sub><b>Sara Vieira</b></sub></a><br /><a href="https://github.com/CodeSandbox/status-page/commits?author=SaraVieira" title="Code">💻</a></td>
-    <td align="center"><a href="https://michaeldeboey.be"><img src="https://avatars3.githubusercontent.com/u/6643991?v=4" width="100px;" alt="Michaël De Boey"/><br /><sub><b>Michaël De Boey</b></sub></a><br /><a href="#tool-MichaelDeBoey" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://michaeldeboey.be"><img src="https://avatars3.githubusercontent.com/u/6643991?v=4" width="100px;" alt="Michaël De Boey"/><br /><sub><b>Michaël De Boey</b></sub></a><br /><a href="https://github.com/CodeSandbox/status-page/commits?author=MichaelDeBoey" title="Code">💻</a> <a href="#tool-MichaelDeBoey" title="Tools">🔧</a></td>
   </tr>
 </table>
 

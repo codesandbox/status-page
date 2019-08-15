@@ -46,9 +46,11 @@ const App = () => {
         <Downtimes downtimes={downtimes} />
       </Main>
       <Footer>
-        Updates provided via the{' '}
-        <a href="https://twitter.com/csbstatus">@csbstatus</a> twitter
-        feed—follow us there!
+        Updates will be provided via the{' '}
+        <a href="https://twitter.com/csbstatus" target="_blank">
+          @csbstatus
+        </a>{' '}
+        twitter feed—follow us there!
       </Footer>
     </Wrapper>
   );

@@ -17,8 +17,8 @@ const MainStatus = ({ loading, up }) => {
           {loading
             ? 'Getting the data'
             : !isDown(up)
-            ? 'All Services Operational'
-            : 'We are experiences some issues'}
+            ? 'All Services are Operational'
+            : 'We are experiencing some issues'}
         </Title>
         <LastCheck>
           {loading ? 'Hold on Tight' : `As of ${lastCheck(up)}`}

@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "alias": "codesandbox-status",
+  "name": "codesandbox-status",
   "build": {
     "env": {
       "REACT_APP_UPDOWN_API_KEY": "@updown_api_key"

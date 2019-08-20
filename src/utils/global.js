@@ -19,7 +19,7 @@ ${({ theme }) => css`
 
   html,
   body {
-    font-family: 'Inter' !important;
+    font-family: 'Inter', sans-serif !important;
   }
 `};
 `;

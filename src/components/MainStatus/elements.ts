@@ -14,7 +14,7 @@ export const LastCheck = styled.span`
   ${({ theme }) => css`
     line-height: 1.5rem;
 
-    color: ${theme.darkWhite};
+    color: ${theme.fadedWhite};
   `};
 `;
 

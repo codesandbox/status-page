@@ -39,7 +39,7 @@ export const Services = styled.ul`
     grid-row-gap: 60px;
     padding: 60px 0 0;
     margin: 20px 0 0;
-    border-top: 1px solid ${theme.transparentWhite};
+    border-top: 1px solid #242424;
 
     @media (max-width: 920px) {
       grid-template-columns: repeat(1, 1fr);
@@ -57,7 +57,7 @@ const colorChange = ({ down, theme }: ColorChangeProps) => keyframes`
   from {
     background: ${theme.fadedWhite};
   }
-  
+
   to {
     background: ${down ? theme.yellow : theme.green};
   }
@@ -66,7 +66,7 @@ const colorChange = ({ down, theme }: ColorChangeProps) => keyframes`
 export const Status = styled.div<{ down?: boolean; loading?: boolean }>`
   ${({ loading, theme }) => css`
     transition: all 0.3s ease;
-    background-color: ${loading && theme.fadedWhite};
+    background-color: ${loading && '#757575'};
     ${!loading &&
       css`
         animation: ${colorChange} 1s forwards;

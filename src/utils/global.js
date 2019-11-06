@@ -9,7 +9,7 @@ ${({ theme }) => css`
   ${global}
 
   html,body, #root {
-    background: #111518 !important;
+    background: #040404 !important;
 
     a {
       color: ${theme.white};
@@ -26,7 +26,7 @@ ${({ theme }) => css`
 
 export const theme = {
   white: '#ffffff',
-  fadedWhite: 'rgba(255, 255, 255, 0.4)',
+  fadedWhite: '#999',
   yellow: '#F59300',
   green: '#30d158',
   transparentWhite: 'rgba(255, 255, 255, 0.2)',

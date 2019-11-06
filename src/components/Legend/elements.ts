@@ -5,7 +5,7 @@ export const Container = styled.div`
     display: flex;
     padding-top: 1rem;
     margin-top: 56px;
-    border-top: 1px solid ${theme.transparentWhite};
+    border-top: 1px solid #242424;
 
     li:not(:last-child) {
       margin-right: 2rem;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Main = styled.main`
-  background: #1d2022;
+  background: #151515;
   box-shadow: 0 2px 0.25rem rgba(0, 0, 0, 0.25),
     0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem;
@@ -10,6 +10,7 @@ export const Main = styled.main`
   min-height: 660px;
   padding: 2.5rem;
   box-sizing: border-box;
+  border-top: 1px solid #242424;
 `;
 
 export const Wrapper = styled.div`
@@ -26,5 +27,5 @@ export const Footer = styled.span`
   text-align: center;
   font-size: 1rem;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: ${props => props.theme.fadedWhite};
 `;

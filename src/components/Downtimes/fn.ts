@@ -12,11 +12,12 @@ export const lastMonth = (checksWithDownTimes: CheckWithDownTimes[]) =>
     .map(({ downTimes, ...product }) => {
       const lastMonthDownTimes = downTimes
         .filter(downTime =>
-          isAfter(downTime.started_at, subDays(new Date(), 30))
+          isAfter(new Date(downTime.started_at), subDays(new Date(), 30))
         )
         .map(downTime => ({
           ...downTime,
-          from30: 30 - differenceInDays(new Date(), downTime.started_at),
+          from30:
+            30 - differenceInDays(new Date(), new Date(downTime.started_at)),
         }));
 
       return {

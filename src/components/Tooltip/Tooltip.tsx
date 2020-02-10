@@ -12,7 +12,7 @@ export const Tooltip: FunctionComponent<Props> = ({ downTime }) => (
   <Container>
     {downTime ? (
       <>
-        <Info>{format(downTime.started_at, 'dddd D MMMM')}</Info>
+        <Info>{format(new Date(downTime.started_at), 'iiii d LLLL')}</Info>
 
         <Info bold>Down for {Math.floor(downTime.duration / 60)}m</Info>
       </>

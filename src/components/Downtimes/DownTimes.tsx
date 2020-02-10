@@ -55,7 +55,8 @@ export const DownTimes: FunctionComponent<Props> = ({
               <Alias>{check.alias}</Alias>
 
               <Data>
-                {Math.floor(check.uptime * 100) / 100}% uptime for the last 30 days
+                {Math.floor(check.uptime * 100) / 100}% uptime for the last 30
+                days
               </Data>
             </Header>
 

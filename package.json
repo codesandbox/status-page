@@ -13,21 +13,21 @@
     "@codesandbox/common": "^1.0.8",
     "axios": "^0.19.2",
     "date-fns": "^2.9.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
-    "@types/node": "^10.17.14",
-    "@types/react": "^16.9.19",
-    "@types/react-dom": "^16.9.5",
-    "@types/styled-components": "^4.4.2",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/styled-components": "^5.1.26",
     "all-contributors-cli": "^6.13.0",
     "husky": "^4.2.1",
     "prettier": "1.19.1",
     "pretty-quick": "^2.0.1",
-    "typescript": "^3.7.5"
+    "typescript": "^4.4.2"
   },
   "browserslist": {
     "production": [
@@ -42,7 +42,7 @@
     ]
   },
   "engines": {
-    "node": ">=10",
+    "node": ">=16",
     "npm": ">=6",
     "yarn": ">=1"
   }

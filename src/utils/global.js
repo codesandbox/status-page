@@ -9,7 +9,7 @@ ${({ theme }) => css`
   ${global}
 
   html,body, #root {
-    background: #040404 !important;
+    background: #0e0e0e !important;
 
     a {
       color: ${theme.white};

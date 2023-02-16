@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Footer = styled.span`
-  margin: 1.5rem 0;
+  margin:6rem 0;
   text-align: center;
   font-size: 13px;
 

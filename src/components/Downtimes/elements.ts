@@ -5,20 +5,21 @@ import { Container as Tooltip } from '../Tooltip/elements';
 export const Alias = styled.h3`
   ${({ theme }) => css`
     margin: 0;
-    font-family: Poppins;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
+    font-size: 16px;
     color: ${theme.white};
   `};
 `;
 
 export const Data = styled.span`
   ${({ theme }) => css`
-    font-family: Poppins;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
     text-align: right;
-
+    font-size: 13px;
     color: ${theme.fadedWhite};
   `};
 `;
@@ -39,7 +40,6 @@ export const Services = styled.ul`
     grid-row-gap: 60px;
     padding: 60px 0 0;
     margin: 20px 0 0;
-    border-top: 1px solid #242424;
 
     @media (max-width: 920px) {
       grid-template-columns: repeat(1, 1fr);
@@ -50,6 +50,7 @@ export const Services = styled.ul`
 export const Service = styled.li`
   display: flex;
   flex-direction: column;
+  justify-content: end;
 `;
 
 type ColorChangeProps = { down?: boolean; theme: any };

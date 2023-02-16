@@ -5,7 +5,6 @@ export const Container = styled.div`
     display: flex;
     padding-top: 1rem;
     margin-top: 56px;
-    border-top: 1px solid #242424;
 
     li:not(:last-child) {
       margin-right: 2rem;
@@ -17,6 +16,7 @@ export const Item = styled.li`
   list-style: none;
   display: flex;
   align-items: center;
+  font-size: 13px;
 `;
 
 export const Dot = styled.div<{ down?: boolean }>`

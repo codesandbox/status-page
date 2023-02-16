@@ -8,6 +8,6 @@ export const Header: FunctionComponent = () => (
   <HeaderStyled>
     <Logo />
 
-    <Title>System Status</Title>
+    <Title>CodeSandbox <span>System Status</span></Title>
   </HeaderStyled>
 );

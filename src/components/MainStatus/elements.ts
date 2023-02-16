@@ -13,7 +13,7 @@ export const Title = styled.h1`
 export const LastCheck = styled.span`
   ${({ theme }) => css`
     line-height: 1.5rem;
-
+    font-size: 13px;
     color: ${theme.fadedWhite};
   `};
 `;

@@ -33,13 +33,11 @@ export const Container = styled.div`
     :after {
       bottom: 100%;
       left: 50%;
-      border: 0.5rem solid transparent;
       content: ' ';
       height: 0;
       width: 0;
       position: absolute;
       pointer-events: none;
-      border-bottom-color: ${theme.white};
       margin-left: -0.5rem;
     }
   `};

@@ -1214,7 +1214,47 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@codesandbox/common@^1.0.8", "@codesandbox/common@^1.0.9":
+"@codesandbox/common@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@codesandbox/common/-/common-1.0.10.tgz#b86aa86bca15acc15c6cb4da7f06e94986469608"
+  integrity sha512-80mjQpW6khEy+42xLGVY7okLgKHZYXgxLKKwvKtaQZnN2FbIJJDmMQ2Afu1WamhnN46htJ/rzqs75bcDxvDtKA==
+  dependencies:
+    "@amplitude/analytics-browser" "^2.2.0"
+    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
+    "@babel/polyfill" "^7.4.4"
+    "@codesandbox/components" "^0.0.3"
+    "@codesandbox/notifications" "^1.0.6"
+    "@codesandbox/template-icons" "^2.0.2"
+    "@sentry/browser" "^5.19.0"
+    "@styled-system/css" "^5.0.23"
+    "@tippy.js/react" "^3.1.1"
+    babel-plugin-preval "^3.0.1"
+    babel-plugin-transform-es2015-modules-commonjs "^6.26.2"
+    codesandbox-api "0.0.32"
+    color "3.2.0"
+    date-fns "^2.0.0"
+    dot-object "1.9.0"
+    error-polyfill "^0.1.2"
+    humps CompuIves/humps
+    image-extensions "^1.1.0"
+    immer "^9.0.6"
+    lodash "^4.17.21"
+    markty-toml "^0.0.9"
+    memoize-one "^3.1.1"
+    ot "^0.0.15"
+    react "^16.8.6"
+    react-icons "^2.2.7"
+    react-input-autosize "2.2.1"
+    react-router-dom "^5.2.0"
+    react-scrollbars-custom "^4.0.20"
+    react-spring "^8.0.25"
+    react-textarea-autosize "^6.1.0"
+    semver "^7.3.5"
+    sha1 "^1.1.1"
+    styled-components "^5.2.0"
+    typeface-inter "^3.10.0"
+
+"@codesandbox/common@^1.0.8":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@codesandbox/common/-/common-1.0.9.tgz#2be5219bab451dbc8b61c5f151a7e9a4b3dda39c"
   integrity sha512-X+OQcVUAAzKexEiQt6QgTrVhQwRY5NJmA3DRrFIcS+PMtJq9ZRTYNz56PO1S4J8nvMNSWw788qtC5uuFzJ/Xsw==
@@ -3766,7 +3806,7 @@ color-string@^0.3.0:
   dependencies:
     color-name "^1.0.0"
 
-color-string@^1.5.2:
+color-string@^1.5.2, color-string@^1.6.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
   integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
@@ -3790,6 +3830,14 @@ color@3.1.2:
   dependencies:
     color-convert "^1.9.1"
     color-string "^1.5.2"
+
+color@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/color/-/color-3.2.0.tgz#108509078b8b93746515cbdffb03e20097ec586b"
+  integrity sha512-4ximSqKXLTQmYLJuvrRHtpOqniR+ASoaVK+Rxdy6ZpfsLvUqtIM7oGGgopRG+O4p9NRv/AfuVD3jsvdxyXqozQ==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.6.0"
 
 colord@^2.9.1:
   version "2.9.3"
@@ -5759,7 +5807,7 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-"humps@github:CompuIves/humps":
+humps@CompuIves/humps, "humps@github:CompuIves/humps":
   version "2.0.0"
   resolved "https://codeload.github.com/CompuIves/humps/tar.gz/7ee34e874c808cf60e7119ee71ac71b8bf2189b7"
 
